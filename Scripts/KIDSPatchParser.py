@@ -95,7 +95,7 @@ def checksum(routine):
                 temp = lineNumber+characterPosition
                 checksum += ord(mExtract(line,character))*temp
             characterPosition = 0
-            
+
     sys.stdout.write("Checksum is: "+str(checksum)+"\n")
 
 def mExtract(string,position):
@@ -109,6 +109,6 @@ def mFind(string,substring):
 def main():
     #unpack(sys.argv[1], sys.argv[2])
     checksum(sys.argv[1])
-         
+
 if __name__ == '__main__':
     main()
